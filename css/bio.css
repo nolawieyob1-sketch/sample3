@@ -1,0 +1,105 @@
+html {
+  font-size: 20px; /* instead of default 16px */
+}
+
+.bio-hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #0a0a0a, #111111);
+  padding: 2rem;
+}
+.bio-hero h2 {
+  color: var(--accent1);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.bio-hero p {
+  color: #aaa;
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Main Bio Content Sections */
+.bio-main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  align-items: center;
+}
+
+.bio-text {
+  flex: 1;
+}
+.bio-text h3 {
+  font-size: 2rem;
+  color: var(--accent1);
+  margin-bottom: 1rem;
+}
+.bio-text p {
+  color: var(--light);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.bio-image {
+  flex: 1;
+  text-align: center;
+}
+.bio-image img {
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Quote Section */
+.bio-quote {
+  padding: 4rem 2rem;
+  text-align: center;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.03);
+}
+.bio-quote blockquote {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.bio-quote p {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Exhibitions List */
+.exhibit-list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--light);
+}
+.exhibit-list li {
+  margin-bottom: 0.8rem;
+  border-left: 4px solid var(--accent1);
+  padding-left: 1rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .bio-main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bio-text, .bio-image {
+    flex: unset;
+    width: 100%;
+  }
+  .bio-hero h2 {
+    font-size: 2.2rem;
+  }
+  .bio-hero p {
+    font-size: 1rem;
+  }
+}

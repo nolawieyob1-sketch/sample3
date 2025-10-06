@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Cherry Art</title>
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="icon" type="image/png" href="pic/L.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+<body>
+  <header id="main-header">
+    <div class="nav-container">
+      <div class="logo-area">
+        <a href="home.html"><img src="pic/L.png" alt="Cherry Art Logo" class="logo" /></a>
+      </div>
+      <nav class="center-nav">
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="bio.html">Biography</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="brand-title"><h1>Cherry Art</h1></div>
+    </div>
+  </header>
+
+  <section class="contact-section">
+  <div class="contact-content">
+    <h2>Contact Cherry Art</h2>
+    <p>We'd love to hear from you. Reach out via the form or connect with us on social media.</p>
+<form id="contactForm" action="https://usebasin.com/f/1416bcab9750" method="POST" novalidate>
+
+  <div class="form-group">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <small class="error-msg"></small>
+  </div>
+
+  <div class="form-group">
+    <input type="email" name="email" placeholder="Your Email" required />
+    <small class="error-msg"></small>
+  </div>
+
+  <div class="form-group">
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <small class="error-msg"></small>
+  </div>
+
+  <button class="btn-outline">Send Message</button>
+</form>
+
+<div id="loadingOverlay" class="loading-overlay" style="display:none;">
+  <div class="loading-spinner"></div>
+</div>
+
+<div id="thankYouPopup" class="popup">
+  <div class="popup-content">
+    <p>Thank you! Your message has been sent.</p>
+    <button id="popupCloseBtn">Close</button>
+
+  </div>
+</div>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/cheredegu/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/chernetart/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.tiktok.com/@papa.ford2" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://wa.me/251913706200" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="minimal-footer">
+    <p>© <span id="year"></span> Cherry Art</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

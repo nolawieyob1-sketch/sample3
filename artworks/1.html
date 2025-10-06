@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heritage Flame – Cherry Art</title>
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="../css/items.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="pic/L.png" />
+</head>
+<body>
+  <header id="main-header">
+    <div class="nav-container">
+      <div class="logo-area">
+        <a href="../home.html"><img src="../pic/l.PNG" alt="Cherry Art Logo" class="logo" /></a>
+      </div>
+      <div class="brand-title"><h1>Cherry Art</h1></div>
+      
+    </div>
+    
+  </header>
+<a class="back-btn" href="../gallery.html">← Back to Gallery</a>
+ 
+<section class="art-hero">
+<section class="art-detail-box">
+  <div class="image-side">
+    <div class="slideshow-container">
+      <!-- Slide 1 -->
+      <div class="slide fade">
+        <img src="../pic/c.jpg" alt="Front View" />
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide fade">
+        <img src="../pic/b.jpg" alt="Back View" />
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide fade">
+        <img src="../pic/d.jpg" alt="Side View" />
+      </div>
+
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-side">
+    <div class="status-tag">Available</div>
+      <h2>Heritage Flame</h2>
+    <p>
+      "Heritage Flame" is a tribute to generational strength, tradition, and culture. With warm golds and rich earth tones,
+      it symbolizes the resilience and beauty carried across generations. This piece is infused with emotion and precision,
+      offering a bold yet elegant presence for any collector seeking legacy.
+    </p>
+    <p>
+      <strong>Medium:</strong> Oil on Canvas<br>
+      <strong>Dimensions:</strong> 80cm x 120cm<br>
+      <strong>Year:</strong> 2024<br>
+      <strong>Price:</strong> $34,000
+    </p>
+    <div class="buy-now-wrapper" style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+  <a href="buy.html" class="buy-now">Buy Now</a>
+ <a href="#" id="addToCartBtn" class="buy-now">Add to Cart</a>
+
+  </div>
+</section>
+</section>
+
+
+  <footer class="minimal-footer">
+    <p>© <span id="year"></span> Cherry Art</p>
+  </footer>
+<script src="../main.js"></script>
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="cart-sidebar hidden">
+  <h3>Your Cart</h3>
+  <div id="cartItems" class="cart-items"></div>
+  <button id="checkoutBtn" class="btn-outline">Checkout</button>
+  <button id="closeCartBtn" class="close-cart-btn" aria-label="Close cart">&times;</button>
+</div>
+
+<a href="../cart.html" id="openCartBtn" class="cart-icon-btn" aria-label="View Cart">
+  <i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span>
+</a>
+
+</body>
+</html>

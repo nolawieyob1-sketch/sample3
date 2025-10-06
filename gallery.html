@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery – Cherry Art</title>
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="pic/L.png" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body class="gallery-page">
+
+  <header id="main-header">
+    <div class="nav-container">
+      <div class="logo-area">
+        <a href="home.html"><img src="pic/L.png" alt="Cherry Art Logo" class="logo" /></a>
+      </div>
+      <nav class="center-nav">
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="bio.html">Biography</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      </nav>
+      <div class="brand-title"><h1>Cherry Art</h1></div>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h2>Art That Speaks</h2>
+      <p>Explore a curated collection of soulful, story-driven works by Chernet Degu.</p>
+    </div>
+    <div id="cartSidebar" class="cart-sidebar hidden">
+  <h3>Your Cart</h3>
+  <div id="cartItems"></div>
+  <button id="checkoutBtn" class="btn-outline">Checkout</button>
+  <button id="closeCartBtn">Close</button>
+</div>
+
+<a href="cart.html" id="openCartBtn" class="cart-icon-btn" aria-label="View Cart">
+  <i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span>
+</a>
+
+  </section>
+
+  <section class="filter-bar">
+    <button data-filter="all" class="filter-btn active">All</button>
+    <button data-filter="available" class="filter-btn">Available</button>
+    <button data-filter="sold" class="filter-btn">Sold</button>
+  </section>
+
+  <section class="gallery-grid">
+    <div class="grid">
+     <a href="artworks/1.html">
+  <div class="grid-item portrait" data-status="available" style="background-image:url('pic/a.jpg')">
+    <div class="overlay">
+      <h4>Heritage Flame</h4>
+      <span class="status available">Available</span>
+    </div>
+  </div>
+</a>
+     <a href="artworks/2.html">
+      <div class="grid-item abstract" data-status="sold" style="background-image:url('pic/b.jpg')">
+        <div class="overlay">
+          <h4>Echoes of Time</h4>
+          <span class="status sold">Sold</span>
+        </div>
+      </div>
+      </a>
+       <a href="artworks/3.html">
+      <div class="grid-item portrait" data-status="available" style="background-image:url('pic/c.jpg')">
+        <div class="overlay">
+          <h4>Wisdom Gaze</h4>
+          <span class="status available">Available</span>
+        </div>
+      </div>
+      </a>
+       <a href="artworks/4.html">
+      <div class="grid-item abstract" data-status="available" style="background-image:url('pic/d.jpg')">
+        <div class="overlay">
+          <h4>Color Storm</h4>
+          <span class="status available">Available</span>
+        </div>
+      </div>
+      </a>
+       <a href="artworks/5.html">
+      <div class="grid-item abstract" data-status="sold" style="background-image:url('pic/e.jpg')">
+        <div class="overlay">
+          <h4>Spiritual Echo</h4>
+          <span class="status sold">Sold</span>
+        </div>
+      </div>
+      </a>
+       <a href="artworks/6.html">
+      <div class="grid-item portrait" data-status="available" style="background-image:url('pic/f.jpg')">
+        <div class="overlay">
+          <h4>Mother’s Memory</h4>
+          <span class="status available">Available</span>
+        </div>
+      </div>
+      </a>
+       <a href="artworks/7.html">
+      <div class="grid-item abstract" data-status="sold" style="background-image:url('pic/b.jpg')">
+        <div class="overlay">
+          <h4>Light and Shadow</h4>
+          <span class="status sold">Sold</span>
+        </div>
+      </div>
+      </a>
+       <a href="artworks/8.html">
+      <div class="grid-item portrait" data-status="available" style="background-image:url('pic/c.jpg')">
+        <div class="overlay">
+          <h4>The Elder</h4>
+          <span class="status available">Available</span>
+        </div>
+      </div>
+       </a>
+       <a href="artworks/9.html">
+      <div class="grid-item abstract" data-status="available" style="background-image:url('pic/d.jpg')">
+        <div class="overlay">
+          <h4>Broken Harmony</h4>
+          <span class="status available">Available</span>
+        </div>
+      </div>
+      </a>
+       <a href="artworks/10.html">
+      <div class="grid-item portrait" data-status="sold" style="background-image:url('pic/e.jpg')">
+        <div class="overlay">
+          <h4>Legacy Eyes</h4>
+          <span class="status sold">Sold</span>
+        </div>
+      </div>
+      </a>
+       <a href="artworks/11.html"  class="grid-link">
+      <div class="grid-item abstract" data-status="available" style="background-image:url('pic/a.jpg')">
+        <div class="overlay">
+          <h4>Roots of Time</h4>
+          <span class="status available">Available</span>
+        </div>
+      </div>
+      </a>
+       <a href="artworks/12.html">
+      <div class="grid-item portrait" data-status="sold" style="background-image:url('pic/b.jpg')">
+        <div class="overlay">
+          <h4>Silent Journey</h4>
+          <span class="status sold">Sold</span>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+
+  <footer class="minimal-footer">
+    <p>© <span id="year"></span> Cherry Art</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
